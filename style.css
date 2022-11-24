@@ -1,0 +1,106 @@
+.nav-up {
+    background: rgb(5, 64, 144);
+    background: linear-gradient(90deg, rgba(5, 64, 144, 1) 0%, rgba(52, 129, 186, 1) 44%, rgba(147, 231, 249, 1) 100%);
+}
+
+.description {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+#bgbottle {
+    top: 3%;
+    background-color: rgb(187, 187, 187);
+    height: 510px;
+    width: 330px;
+    transform: translate(3%);
+    position: relative;
+}
+
+.bgphoto {
+    object-fit: cover;
+    background-image: url("img/bottle.png");
+    width: 320px;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.variation {
+    right: 3%;
+    top: 3%;
+    position: relative;
+}
+
+.editelement {
+    margin-top: 10px;
+}
+
+.dragtext {
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.dragtext:hover {
+    cursor: move;
+}
+
+.pat {
+    height: 100px;
+    width: 100px;
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+}
+
+.pat-circle {
+    position: relative;
+    top: 4px;
+    left: 4px;
+    width: 85px;
+    height: 85px;
+    background-color: black;
+    border-radius: 90px;
+}
+
+.pat-triangle {
+    position: relative;
+    top: 5px;
+    left: 6px;
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 80px solid black;
+}
+
+
+.pat-square {
+    position: relative;
+    top: 14px;
+    left: 14px;
+    width: 65px;
+    height: 65px;
+    background-color: black;
+    transform: rotateY(0deg) rotate(45deg)
+}
+
+.feat {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.featbox {
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.list-group-item {
+    padding: 0rem;
+}

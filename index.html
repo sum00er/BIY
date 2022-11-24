@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIY Custom Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4933138a91.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <script>
+        $(function () {
+            $("#draggable").draggable();
+        });
+    </script>
+</head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light nav-up">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">B.I.Y</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Customize</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div id="bgbottle" class="border border-secondary border-5 rounded">
+                <div class="bgphoto">
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="variation">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item nav-text" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                            data-bs-target="#text-tab-pane" type="button" role="tab" aria-controls="text-tab-pane"
+                            aria-selected="true">Text</button>
+                    </li>
+                    <li class="nav-item nav-pattern" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                            data-bs-target="#pattern-tab-pane" type="button" role="tab" aria-controls="pattern-tab-pane"
+                            aria-selected="false">Pattern</button>
+                    </li>
+                    <li class="nav-item nav-image" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#image-tab-pane"
+                            type="button" role="tab" aria-controls="image-tab-pane" aria-selected="false">Featured
+                            image</button>
+                    </li>
+                    <li class="nav-item nav-el" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#el-tab-pane"
+                            type="button" role="tab" aria-controls="el-tab-pane" aria-selected="false">
+                            Your Elements</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="mt-3 tab-pane fade show active" id="text-tab-pane" role="tabpanel"
+                        aria-labelledby="text-tab" tabindex="0">
+                        <p class="description">Add your words</p>
+                        Text
+                        <div class="typebox input-group">
+                            <input type="text" class="form-control" aria-label="Text input" id="textval">
+                        </div>
+                        <div class="needword" style="color: darkred; display: none;">Please input your text.</div>
+                        <hr>
+                        <div class="text-font">
+                            Font
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">font family</span>
+                                <select class="form-select" id="inputGroupSelect02">
+                                    <option selected value="Arial">Arial</option>
+                                    <option value='"Sofia", sans-serif'>Sofia</option>
+                                    <option value="'Trirong', serif">Trirong</option>
+                                </select>
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">font size</span>
+                                <select class="form-select" id="fontsize">
+                                    <option selected value="12px">small</option>
+                                    <option value='18px'>medium</option>
+                                    <option value="28px">large</option>
+                                </select>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="text-color">
+                            Color
+                            <div>
+                                <input type="color" id="textcol" value="#ffffff">
+                            </div>
+                        </div>
+                        <hr>
+                        <center><button class="btn btn-secondary addtext" type="button" id="button-addon2">Add
+                                <i class="fa-solid fa-plus"></i></button></center>
+                    </div>
+                    <div class="mt-3 tab-pane fade" id="pattern-tab-pane" role="tabpanel" aria-labelledby="pattern-tab"
+                        tabindex="0">
+                        <p class="description">stick some patterns on</p>
+                        <div class="row">
+                            <div class="col">
+                                <div class="pat ch-circle" type="button">
+                                    <div class="pat-circle"></div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="pat ch-triangle" type="button">
+                                    <div class="pat-triangle"></div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="pat ch-square" type="button">
+                                    <div class="pat-square"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="input-group mb-3">
+                            Size
+                        </div>
+                        <div>
+                            <select class="form-select ml-3" id="patsize">
+                                <option selected value="20">small</option>
+                                <option value='50'>medium</option>
+                                <option value="80">large</option>
+                            </select>
+                        </div>
+                        <hr>
+                        <div class="text-color mt-2">
+                            Color
+                            <div>
+                                <input type="color" id="patcol" value="#ffffff">
+                            </div>
+                        </div>
+                        <hr>
+                        <center><button class="btn btn-secondary addpat" type="button">Add
+                                <i class="fa-solid fa-plus"></i></button></center>
+                    </div>
+                    <div class="mt-3 tab-pane fade" id="image-tab-pane" role="tabpanel" aria-labelledby="image-tab"
+                        tabindex="0">
+                        <p class="description">choose one of our featured images</p>
+                        <div class="row">
+                            <div class="col">
+                                <img class="feat featbox" data-img="fine" type="button" src="img/fine.png">
+                            </div>
+                            <div class="col">
+                                <img class="feat featbox" data-img="bear" type="button" src="img/bear.png">
+                            </div>
+                            <div class="col">
+                                <img class="feat featbox" data-img="fok" type="button" src="img/fok.png">
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col">
+                                <img class="feat featbox" data-img="cat" type="button" src="img/cat.png">
+                            </div>
+                            <div class="col-8">
+                                <img class="feat featbox" data-img="ham" type="button" src="img/ham.png">
+                            </div>
+                        </div>
+                        <hr>
+                        <center><button class="btn btn-secondary addimg" type="button">Add
+                                <i class="fa-solid fa-plus"></i></button></center>
+                    </div>
+                    <div class="mt-3 tab-pane fade" id="el-tab-pane" role="tabpanel" aria-labelledby="el-tab"
+                        tabindex="0">
+                        <div class="yourel">
+                            <div class="noele">
+                                <center>‧ You have not added any elements yet ‧</center>
+                            </div>
+                            <ul class="list-group">
+                            </ul>
+                            <hr>
+                            <center><button class="btn btn-secondary" type="button">Purchase
+                                    <i class="fa-solid fa-bag-shopping"></i></button></center>
+                        </div>
+                        <div class="editing" style="display: none;">
+
+                            <div class="text-font">
+                                Font
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">font family</span>
+                                    <select class="form-select" id="edinputGroupSelect02">
+                                        <option selected value="Arial">Arial</option>
+                                        <option value='"Sofia", sans-serif'>Sofia</option>
+                                        <option value="'Trirong', serif">Trirong</option>
+                                    </select>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">font size</span>
+                                    <select class="form-select" id="edfontsize">
+                                        <option selected value="20px">small</option>
+                                        <option value='40px'>medium</option>
+                                        <option value="70px">large</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="text-color">
+                                Color
+                                <div>
+                                    <input type="color" id="edtextcol" value="#ffffff">
+                                </div>
+                            </div>
+                            <hr>
+                            <button class="btn btn-secondary btn-block edtext" type="button" id="button-addon2">Edit <i
+                                    class="fa-solid fa-check"></i></button>
+                            <button class="btn btn-secondary btn-block edback" type="button" id="button-addon2">Back <i
+                                    class="fa-solid fa-right-from-bracket"></i></button>
+                        </div>
+                        <div class="editingpat" style="display: none;">
+                            <div class="input-group mb-3">
+                                Size
+                            </div>
+                            <div>
+                                <select class="form-select ml-3" id="edpatsize">
+                                    <option selected value="20">small</option>
+                                    <option value='50'>medium</option>
+                                    <option value="80">large</option>
+                                </select>
+                            </div>
+                            <hr>
+                            <div class="text-color mt-2">
+                                Color
+                                <div>
+                                    <input type="color" id="edpatcol" value="#ffffff">
+                                </div>
+                            </div>
+                            <button class="btn btn-secondary btn-block edpat" type="button" id="button-addon2">Edit <i
+                                    class="fa-solid fa-check"></i></button>
+                            <button class="btn btn-secondary btn-block edback" type="button" id="button-addon2">Back <i
+                                    class="fa-solid fa-right-from-bracket"></i></button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <script src="listener.js"></script>
+</body>
+
+</html>
